@@ -1,0 +1,11 @@
+<view class="info" wx:for="{{contentlist}}" wx:key="key" class="read">
+	<input hidden="{{hidden}}" value="{{item.id}}"/>
+	<view class="titdate">
+    <view class="title">{{item.bookname}}</view>       
+    <view class="readdate">{{item.bookdate}}</view>
+  </view>        
+  <rich-text nodes="{{item.content}}" class="content"></rich-text> 
+  <view class="gjl">
+    <navigator url="/pages/content/content?readid={{item.id}}" class="xsqw">显示全文</navigator>
+  </view>
+</view>

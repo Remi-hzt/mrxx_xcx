@@ -1,0 +1,152 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.1",
+	"appid": "wxb8d32cb2c67b9e08",
+	"projectname": "menu",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/dhl/dhl",
+					"pathName": "pages/dhl/dhl",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/class/class",
+					"pathName": "pages/class/class",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/music/music",
+					"pathName": "pages/music/music",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/video/video",
+					"pathName": "pages/video/video",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/word/word",
+					"pathName": "pages/word/word",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/content/content",
+					"pathName": "pages/content/content",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/read/read",
+					"pathName": "pages/read/read",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/notes/notes",
+					"pathName": "pages/notes/notes",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/a/a",
+					"pathName": "pages/a/a",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/set/set",
+					"pathName": "pages/set/set",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/biji/biji",
+					"pathName": "pages/biji/biji",
+					"scene": null
+				}
+			]
+		}
+	}
+}

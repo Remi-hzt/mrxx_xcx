@@ -1,0 +1,25 @@
+<!--pages/videocoll/videocoll.wxml-->
+<view class="titlett">视频收藏</view>
+<view class="fg"></view>
+<view class="main">
+  <navigator class="navList"  wx:for="{{contentlist}}" wx:key="key"  url="/pages/videobf/videobf?videoid={{item.id}}">
+    <!-- 图片和评论观看 -->
+    <view class="navListInfo">
+      <image mode="widthFix" src="{{item.poster}}"></image>
+      <!-- 观看和评论 -->
+      <view class="navListTest">
+        <!-- 观看 -->
+        <view class="videobf">
+          <image src="/images/bofang.png" style="height:95rpx;width:95rpx;"></image>
+        </view>
+        <!-- 评论 -->
+        
+      </view>
+    </view>
+    <!-- 标题 -->
+     <view class="navListTitle">
+     【{{item.author}}】
+      {{item.name}}
+    </view>
+  </navigator>
+</view>

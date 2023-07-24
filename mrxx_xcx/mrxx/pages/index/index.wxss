@@ -1,0 +1,58 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.page{
+  width: 90%;
+  margin: 0 auto;
+
+}
+.page .wc button{
+  width: 90%;
+  height: 45px;
+  text-align: left;
+  background-color: #fff; 
+  line-height: 50px;
+  padding: 0px 0px 0px 10px;
+ 
+}
+.page .wc button:hover{
+  background-color: rgba(204, 204, 204, 0.164);
+  border-radius: 0px;
+}
+.page .wc button image{
+  float: left;
+  margin-top: 12px;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+.page .wc button text{
+  float: left;
+  font-size: 13px;
+  font-weight: 400;
+}
+.page .line{
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  border-top: 1px solid #ccc;
+}

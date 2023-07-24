@@ -1,0 +1,25 @@
+<!--pages/bijiqw/bijiqw.wxml-->
+<!--pages/content/content.wxml-->
+<view class="info" wx:for="{{result}}" wx:key="key" class="read">
+  <view class="titdate">
+    <view class="title">{{item.title}}</view>       
+    <view class="gjl">  
+    <view class="intro" id="readzan_{{item.id}}">    
+        <view class="container">
+            <view class='question'>
+              <text style='color:white'>{{msg}}</text>
+              <button open-type='share'><image src="/images/fenxiang.png" class="fenxiang"></image></button>
+            </view>
+        </view>
+    </view>
+  </view>
+  </view>  
+  <view class="readxx">
+   <view class="readdate">{{item.date}}</view>
+   </view>       
+  <rich-text nodes="{{item.note}}" class="content"></rich-text> 
+ 
+  <view class="hide{{showView?'show':''}}">
+      <text class="fycon">{{item.translation}}</text>
+  </view>  
+</view>

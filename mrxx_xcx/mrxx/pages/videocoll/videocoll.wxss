@@ -1,0 +1,61 @@
+/* pages/videocoll/videocoll.wxss */
+.main{
+  display: flex;
+  padding:5rpx;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.navList{
+  width:100%;
+  margin-bottom:20rpx;
+}
+.navListInfo{
+  position:relative;
+}
+.navListInfo image{
+  width:100%;
+}
+.navListTest{
+  position:absolute;
+  bottom:185rpx;
+  display: flex;
+  justify-content: space-around;
+  font-size: 28rpx;
+  left:0rpx;
+  width:100%;
+}
+.navListTitle{
+  font-size:28rpx;
+  display: -webkit-box;
+  /* 允许换行 */
+  white-space:normal;
+  /* 长字符运行换行显示 */
+  word-wrap: break-word;
+  /* 显示行数 */
+  -webkit-line-clamp: 2;
+  /* 垂直显示 */
+  -webkit-box-orient: vertical;
+  /* 超出部分隐藏 */
+  overflow: hidden;
+  /* 超出部分用'...'表示 */
+  text-overflow: ellipsis; 
+}
+.videobf image{
+  text-align: center;
+  margin: 0 auto;
+}
+.titlett{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  
+}
+.fg{
+  width: 90%;
+  height: 2px;
+  margin: 0 auto;
+  background: #aaa;
+  margin-bottom: 5px;
+}

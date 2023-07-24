@@ -1,0 +1,17 @@
+<!--pages/videobf/videobf.wxml-->
+<view class="container">
+    <view class="goods-container">
+       <view id="myVideo" class="goods-box" wx:for-items="{{result}}" wx:key="{{index}}" data-id="{{item.id}}">        
+          <video src="{{video_base_url}}{{item.src}}" binderror="videoErrorCallback"></video>        
+          <view class="goods-title">【{{item.author}}】
+            {{item.name}}</view>
+          <view class="question" bindtap='tapCollect' >
+            <image src="/images/{{collect_star}}" class="shoucang"/>
+          </view>         
+            <view class='question'>
+              <text style='color:white'>{{msg}}</text>
+              <button open-type='share' class="fenxiang"><image src="/images/fenxiang.png" class="fenxiang1"></image></button>
+            </view>
+        </view>  
+    </view>
+</view>

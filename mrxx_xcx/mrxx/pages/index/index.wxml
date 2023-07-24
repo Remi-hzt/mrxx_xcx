@@ -1,0 +1,44 @@
+<!--index.wxml-->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+      获取头像昵称 
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!--<view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="tabBar">
+  </view>-->
+  <view class="page">
+    <!-- 侧边栏内容 -->
+        <view class="page-content">
+            <view class="wc">
+              <button id="collect" bindtap="collectPage">
+                <image src="/images/read1.png" ></image>
+                <text>文章收藏</text>
+              </button>             
+            </view>
+            <view class="line"></view>
+            <view class="wc">
+              <button id="collect" bindtap="musicPage">
+                <image src="/images/music1.png" ></image>
+                <text>音频收藏</text>
+              </button>             
+            </view>
+            <view class="line"></view>
+            <view class="wc">
+              <button id="collect" bindtap="videoPage">
+                <image src="/images/video1.png" ></image>
+                <text>视频收藏</text>
+              </button>             
+            </view>
+            
+            
+        </view>
+  </view>
+
+

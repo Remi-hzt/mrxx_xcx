@@ -1,0 +1,43 @@
+<view>
+  <swiper class="categoryList" >
+  <block wx:for="{{categoryList}}" wx:key="item">
+  <swiper-item>
+  <block wx:for="{{item}}" wx:key="item">
+    <view class="category-info">
+      <navigator url="{{item.url}}" open-type="navigate" hover-class="other-navigator-hover">
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </navigator>
+    </view>
+  </block>
+  </swiper-item>
+  </block>
+  </swiper>
+</view>
+<view class='carousel'> 
+  <swiper class='carousel_swiper' indicator-dots="true" indicator-color="#f4f4f4" indicator-active-color="#1E90FF" autoplay="true" interval='2000' circular='true'>
+    <block wx:for="{{carouselList}}" wx:key="key">
+      <swiper-item bindtap='chomeCarouselClick' data-url='/pages{{item.url}}'>
+        <image class="carouselImg" src='{{item.lbtimage}}' mode='aspectFill' ></image>
+        <view class="titlelbt">{{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+ </view>
+<view class="titlett">
+  <view class="titbj">近期笔记</view>
+
+</view>
+<view class="fg"></view>
+<view  wx:for="{{contentlist}}" wx:key="key" class="read">
+	<view class="titdate">
+    <view class="title">{{item.title}}</view>       
+    <view class="readdate">{{item.date}}</view>
+  </view>  
+    <view class="fg1"></view>        
+  <rich-text nodes="{{item.note}}" class="content"></rich-text> 
+  <view class="gjl">
+    <navigator url="/pages/bijiqw/bijiqw?notesid={{item.id}}" class="xsqw">显示全文</navigator>
+  </view>
+</view>

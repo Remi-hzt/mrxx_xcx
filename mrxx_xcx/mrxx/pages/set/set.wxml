@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <button bindtap='bindViewTap'>选择图片</button>
+  </view>
+
+   <view><image src='{{avatarUrl}}' bindtap='preview_img'></image></view>
+</view>

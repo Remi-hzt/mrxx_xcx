@@ -1,0 +1,19 @@
+<!--pages/biji/biji.wxml-->
+<view class="bjtit">
+  <view class="titlett">我的笔记</view>
+  <image src="/images/tianjia.png" bindtap="addnotes" class="tjimage"></image>
+</view>
+<view class="fg"></view>
+<view class="bjlist">
+  <view wx:for="{{contentlist}}" wx:key="key" class="read">
+    <view class="titdate">
+      <view class="title">{{item.title}}</view>       
+      <view class="readdate">{{item.date}}</view>
+    </view>  
+      <view class="fg1"></view>        
+    <rich-text nodes="{{item.note}}" class="content"></rich-text> 
+    <view class="gjl">
+      <navigator url="/pages/bijiqw/bijiqw?notesid={{item.id}}" class="xsqw">显示全文</navigator>
+    </view>
+  </view>
+</view>

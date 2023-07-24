@@ -1,0 +1,36 @@
+<!--pages/musiccoll/musiccoll.wxml-->
+<view class="titlett">音频收藏</view>
+<view class="fg"></view>
+<view class="container">
+  <view wx:if="{{showList}}" class="list">
+    <view wx:for="{{audioList}}" class='item {{audioIndex==index?"active":""}}' bindtap='listClick' data-pos='{{index}}' data-action="{{item.id}}">
+      <view>{{item.name}}</view>
+      <text>{{item.author}}</text>
+    </view>
+  </view>
+
+  <view wx:else class='background'>
+    <view class='info'>
+      <view>{{audioList[audioIndex].name||""}}</view>
+      <view>{{audioList[audioIndex].author||""}}</view>
+    </view>
+    <image class='list' bindtap='pageChange' src='/images/list.png'></image>
+    <image class='poster {{playStatus?"rotate":"rotate-paused"}}' mode="scaleToFill" src='{{audioList[audioIndex].poster}}'></image>
+    <view class='progress'>
+      <text>{{progressText}}</text>
+      <slider class='bar' bindchange="sliderChange" bindchanging="sliderChanging" value="{{progress}}" step="1" min='0' max='{{duration}}' activeColor="#1aad19" block-size="12" block-color="#1aad19" />
+      <text>{{durationText}}</text>
+    </view>
+    <view class='buttons'>
+      <view class="bottom-items" >
+          <image src="/images/fenxiang.png"/>
+      </view>
+      <image class='button' bindtap='lastMusic' src='/images/last.png'></image>
+      <image class='button' bindtap='playOrpause' src='{{playStatus?"/images/pause.png":"/images/play.png"}}'></image>
+      <image class='button' bindtap='nextMusic' src='/images/next.png'></image>
+      <view class="bottom-items" bindtap='tapCollect' >
+          <image src="/images/{{collect_star}}"/>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/content/content",
+    "pages/read/read",
+    "pages/music/music",
+    "pages/video/video",
+    "pages/videobf/videobf",
+    "pages/word/word",
+    "pages/collect/collect",
+    "pages/set/set",
+    "pages/musiccoll/musiccoll",
+    "pages/videocoll/videocoll",
+    "pages/notes/notes",
+    "pages/biji/biji",
+    "pages/bijiqw/bijiqw"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "每日学习",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1E90FF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index2.png",
+        "pagePath": "pages/test/test",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/nodes1.png",
+        "iconPath": "images/nodes.png",
+        "pagePath": "pages/biji/biji",
+        "text": "笔记"
+      },
+      {
+        "selectedIconPath": "images/yh.png",
+        "iconPath": "images/yh2.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

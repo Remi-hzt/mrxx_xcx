@@ -1,0 +1,93 @@
+/* pages/notes/notes.wxss */
+@import "./assets/iconfont.wxss";
+.bjtitle{
+  margin: 0 auto;
+  width: 90%;
+  height: 40px;
+  margin-top: 10px;
+}
+.bjbt{
+  width: 50px;
+  float: left;
+}
+.bjbut{
+  float: left;
+  border-bottom: 1px solid #ccc;
+}
+.container {
+  width: 100%;
+}
+
+.ql-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #ECECEC;
+}
+
+.ql-active {
+  color: #22C704;
+}
+
+.iconfont {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ECECEC;
+  border-left: none;
+  border-right: none;
+}
+
+.tj{
+  margin-top: 10px;
+  width: 90%;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.notestit{
+  width: 100px;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  
+}
+button:not([size='mini']) {
+  width: 50px;
+}
+.notestj{
+  width: 20px;
+  height: 40px;
+  float: right;
+  background: #22C704;
+  color: #fff;
+  border-radius: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 0px;
+}
+.fg{
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  background: #22C704;
+  margin-bottom: 5px;
+}

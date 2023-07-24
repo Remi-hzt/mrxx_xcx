@@ -1,0 +1,17 @@
+/* pages/word/word.wxss */
+
+input{
+  border: 1px solid grey;
+  margin: 5%;
+  padding: 5px;
+  border-radius:3px;
+}
+button{
+  /* width: 80%; */
+  margin: 5%;
+}
+.textView{
+  margin: 5%;
+}.senView{
+ margin: 5%;
+}

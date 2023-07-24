@@ -1,0 +1,33 @@
+<!--pages/content/content.wxml-->
+<view class="info" wx:for="{{result}}" wx:key="key" class="read">
+  <view class="titdate">
+    <view class="title">{{item.bookname}}</view>       
+   
+  </view>  
+  <view class="readxx">
+   <view class="readdate">{{item.bookdate}}</view>
+    <view class="readdate">{{item.author}}</view>
+   </view>       
+  <rich-text nodes="{{item.content}}" class="content"></rich-text> 
+  <view class="gjl">  
+    <view class="intro" id="readzan_{{item.id}}">
+        <view class="bottom-items" bindtap='tapCollect'id="readzan{{item.id}}">
+          <image src="/images/{{collect_star}}" class="shoucang"/>          
+        </view>
+        <view class="container">
+            <view class='question'>
+              <text style='color:white'>{{msg}}</text>
+              <button open-type='share'><image src="/images/fenxiang.png" class="fenxiang"></image></button>
+        </view>
+
+        </view>
+        <view class="rightfy">
+          <button class="hide{{showView?'show':''}}" bindtap="onChangeShowState">{{showView?'隐藏翻译':'显示翻译'}}</button>
+          <button class="hide{{showView?'':'show'}}" bindtap="onChangeShowState">{{showView?'隐藏翻译':'显示翻译'}}</button>
+        </view>
+    </view>
+  </view>
+  <view class="hide{{showView?'show':''}}">
+      <text class="fycon">{{item.translation}}</text>
+  </view>  
+</view>
